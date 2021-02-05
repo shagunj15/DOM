@@ -1,7 +1,7 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
-var span = document.getElementsByTagName("span");
+var li = document.getElementsByTagName("li");
 var button2 = document.getElementsByClassName("del");
 
 //adding new items with the delete button
@@ -52,7 +52,7 @@ for (var i = 0; i < button2.length; i++) {
 	button2[i].addEventListener("click", deleteElement, false);
 }
 
-for (var i = 0; i <= span.length; i++) {
-	span[i].addEventListener("click", StrikeThroughListItem);
+for (var i = 0; i <= li.length; i++) {
+	li[i].addEventListener("click", StrikeThroughListItem);
 }
 
